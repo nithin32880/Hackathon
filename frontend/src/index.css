@@ -4,7 +4,7 @@ body {
   font-family: 'Montserrat', sans-serif !important;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  background-color: azure;
+  background-color: rgb(244, 252, 252);
 }
 body , html{
   overflow-x: hidden !important;
@@ -28,7 +28,7 @@ code {
 h1{
   font-size: 30px;
   font-weight: bold;
-  color : rgb(76, 0, 255);
+  color : rgb(95, 114, 227);
 }
 p{
   margin: 5px !important;
@@ -37,9 +37,9 @@ p{
 }
 .btn1{
   box-shadow: none !important;
-  background-color : white !important;
-  color: black !important;
-  border: 1px solid grey !important;
+  background-color : rgb(0, 0, 0) !important;
+  color: rgb(224, 224, 224) !important;
+  border: 1px solid rgb(2, 1, 1) !important;
   padding: 5px 15px !important;
   outline: none !important;
 }
@@ -56,17 +56,23 @@ button{
 .header .ant-btn{
   box-shadow: none !important;
   background-color : white !important;
-  color: orangered !important;
+  color: rgb(181, 124, 107) !important;
   border: 1px solid orangered !important;
   padding: 5px 15px !important;
   outline: none !important;
 }
+.header-border {
+  height: 75px;
+  width: 100%;
+  background-color: #ebe3e3; /* Change color as needed */
+}
+
 .content{
   min-height: 90vh;
   
 }
 .footer{
-  background-color: aliceblue;
+  background-color: rgb(235, 234, 234);
   padding: 10px;
 }
 
@@ -99,21 +105,21 @@ button{
   transition: 0.3s;
 }
 .login{
-  background-color:white  ;
+  background-color:rgba(76, 92, 94, 0.329)  ;
   padding-top: 50px;
   min-height: 100vh;
 }
 .login label , .login h1{
-  color: rgb(0, 0, 0) !important;
+  color: rgb(15, 13, 13) !important;
   opacity: 0.6;
 }
 .login-form{
-  background-color: #ebebeb;
+  background-color: #dcdede;
 }
 .login-form input{
   background-color: #b1acac !important;
   border : none !important;
-  color: white;
+  color: rgb(239, 238, 238);
   opacity: 0.5;
 }
 .login-logo{

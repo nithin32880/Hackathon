@@ -9,8 +9,6 @@ const usersRoute = require('./routes/usersRoute')
 const carsRoute = require('./routes/carsRoute')
 const bookingsRoute = require('./routes/bookingsRoute')
 
-
-
 app.use("/api/cars/", require("./routes/carsRoute"));
 app.use("/api/users/", require("./routes/usersRoute"));
 app.use("/api/bookings/", require("./routes/bookingsRoute"));
@@ -18,13 +16,13 @@ app.use("/api/bookings/", require("./routes/bookingsRoute"));
 
 //----------deployment-----------------
 
-__dirname = path.resolve();
+__dirname1 = path.resolve();
 
 if(process.env.NODE_ENV==="production") {
- app.use(express.static(path.join(__dirname,"/frontend/build")));
+ app.use(express.static(path.join(__dirname1,"/frontend/build")));
 
  app.get('*',(req,res)=>{
-   res.sendFile(path.resolve(__dirname,"frontend","build","index.html"));
+   res.sendFile(path.resolve(__dirname1,"frontend","build","index.html"));
  });
 }else{
 	app.get("/", (req, res)=>{

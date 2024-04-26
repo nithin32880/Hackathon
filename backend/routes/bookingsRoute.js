@@ -50,7 +50,7 @@ router.get("/getallbookings", async(req, res) => {
     try {
 
         const bookings = await Booking.find().populate('car')
-        res.send(bookings)
+        res.json(bookings)
         
     } catch (error) {
         return res.status(400).json(error);
